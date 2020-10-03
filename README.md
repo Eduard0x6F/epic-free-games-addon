@@ -11,5 +11,5 @@ Needed a backend for requests on Epic Games Store website.
 
 ![Notify and games list working](./readme-img/notification.png "Notify and games list working")
 
-![Loading game list](./readme-img/loading.png "Loading game list")
+![Loading game list](./readme-img/loading.png "Loading game lists")
 
