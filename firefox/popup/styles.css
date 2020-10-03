@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+
+body {
+  font: 400 14px 'Arial', sans-serif;
+  background: #222222;
+  -webkit-font-smoothing: antialiased;
+}
+
+input, button, textarea {
+  font: 400 18px 'Arial', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+button {
+  cursor: pointer;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;  
+}
+.main-container .list-title {
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0.2rem;
+  text-decoration: none;
+  
+}
+.main-container .cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0.5rem;
+  color: white;
+  width: 100%;  
+}
+.main-container .cards-container .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.2rem;
+  padding: 0.2rem;
+  width: 100%;
+  border: 0.5px solid rgb(46, 46, 46);
+  border-radius: 4px;
+}
+.card:hover {
+  cursor: pointer;
+  transition: transform 0.1s;
+  transform: scale(1.02);
+  background-color: rgb(46, 46, 46);
+}
+.game-image {
+  object-fit: contain;
+  align-self: flex-start;
+  margin-left: 0;
+}
+.game-name,.game-date {
+  flex: 1 1 0;
+  justify-content: left;
+
+}
+
+.cards-container .text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 100%;
+  padding: 0.4rem;
+}
+
+.not-game-message {
+  width: 100%;
+  padding: 2rem;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.loading-message {
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 2rem;
+
+  -webkit-animation: loading 1.2s ease-in-out infinite alternate;
+  animation: loading 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes loading {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+.hidden {
+  display: none;
+}
+
+.available {
+  color: rgb(43, 43, 43);
+  background-color: rgb(236, 236, 236);
+}
+.available:hover {
+  color: rgb(43, 43, 43);
+  background-color: rgb(255, 254, 254);
+}

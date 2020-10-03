@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Epic Games Free Weekly",
+  "version": "1.0",
+  "description": "Addon for be notified about free games weekly claims on Epic Games Store.",
+
+  "icons": {
+    "48": "icons/free-games-64.png",
+    "64": "icons/free-games-48-red.png"
+  },
+
+  "permissions": [
+    "*://localhost/*",
+    "storage",
+    "notifications"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/free-games-64.png",
+    "default_title": "Epic Games Free Weekly",
+    "default_popup": "popup/index.html"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+    
+}
